@@ -48,7 +48,7 @@ else
 	
 	// Ouput short link based on GET params
 	// Callback (see bookmarklet instructions)
-	if ($_GET['jsonp'] === 'short_callback')
+	if ($_GET['callback'] === 'true')
 	{ 
 		header('Content-type: application/json');
 		echo 'short_callback({"short_url":"'.HOST.$encoded.'"})';
